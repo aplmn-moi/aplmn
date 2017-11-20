@@ -4,8 +4,96 @@
 	<meta charset="UTF-8">
 	<title>First project</title>
 	<link rel="stylesheet" href="style.css">
+	<style>
+		.logo {
+			width: 185px;
+			float: left;
+		}
+		.main {
+			list-style-type: none;
+			float: left;
+		}
+		.mainmenu {
+			list-style-type: none;
+			float: left;
+				}
+		.mainmenu div {
+			width: 140px;
+			height: 50px;
+					}
+		.mainmenu div>a {
+			display: block;
+			color: blue;
+			text-decoration: none;
+			text-align: center;
+					}
+		.mainsubmenu {
+			list-style-type: none;
+			display: none;
+			padding: 0;
+			margin: 1;
+			height: 50px;
+			width: 280px;
+					}
+		.mainsubmenu > li {
+			background: blue;
+			display: block;
+  		 	padding: 1px;
+			border: 1px;
+					}
+		.mainsubmenu > li >a {
+			background: blue;
+		}		
+		div:hover ul {
+			display: block;
+					}
+		[class*="col-"] {
+			color: blue;
+			font-size: 20px;
+			text-align: center;
+			padding-top: 1px;
+			padding-bottom: 1px;
+			border-right: 1px solid #fff;
+			height: 50px;
+			width: 145px;
+						}
+		.search {
+			list-style-type: none;
+			width: 200px;
+			height: 38px;
+		}
+		.korzina {
+			list-style-type: none;
+			right: 0;
+			display: block;
+			width: 42px;
+			height: 42px;
+			padding: 1px;
+			margin: 1px;
+		}
+	</style>
 </head>
 <body>
-	<div>Orange</div>
+	<div class="main">
+		<div class="logo"><img src="demoShop/icon (3).png" alt=""></div>
+		<div class="mainmenu">
+			<div class="col-md-4"><a href="">Home</a></div>
+			<div class="col-md-4"><a href="">Products</a>
+				<ul class="mainsubmenu">
+					<li><a href="">Lorem ipsum dolor</a></li>
+					<li ><a href="">Sit amet</a></li>
+					<li ><a href="">Consectetur adipisicing</a></li>
+					<li ><a href="">Tempor incididunt</a></li>
+					<li ><a href="">Dolore magna aliqua</a></li>
+					<li ><a href="">Ut enim ad minim veriam</a></li>
+					<li ><a href="">Quis nostrud</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4"><a href="">Payment</a></div>
+			<div class="col-md-4"><a href="">Shipping</a></div>
+		</div>
+		<div class="search"><input type="text" name="search" placeholder="search" id="1"></div>
+		<div class="korzina"><a href=""><img src="demoShop/icon (1).png" alt=""></a></div>
+	</div>
 </body>
 </html>
