@@ -4,96 +4,241 @@
 	<meta charset="UTF-8">
 	<title>First project</title>
 	<link rel="stylesheet" href="style.css">
-	<style>
-		.logo {
-			width: 185px;
-			float: left;
-		}
-		.main {
-			list-style-type: none;
-			float: left;
-		}
-		.mainmenu {
-			list-style-type: none;
-			float: left;
-				}
-		.mainmenu div {
-			width: 140px;
-			height: 50px;
-					}
-		.mainmenu div>a {
-			display: block;
-			color: blue;
-			text-decoration: none;
-			text-align: center;
-					}
-		.mainsubmenu {
-			list-style-type: none;
-			display: none;
-			padding: 0;
-			margin: 1;
-			height: 50px;
-			width: 280px;
-					}
-		.mainsubmenu > li {
-			background: blue;
-			display: block;
-  		 	padding: 1px;
-			border: 1px;
-					}
-		.mainsubmenu > li >a {
-			background: blue;
-		}		
-		div:hover ul {
-			display: block;
-					}
-		[class*="col-"] {
-			color: blue;
-			font-size: 20px;
-			text-align: center;
-			padding-top: 1px;
-			padding-bottom: 1px;
-			border-right: 1px solid #fff;
-			height: 50px;
-			width: 145px;
-						}
-		.search {
-			list-style-type: none;
-			width: 200px;
-			height: 38px;
-		}
-		.korzina {
-			list-style-type: none;
-			right: 0;
-			display: block;
-			width: 42px;
-			height: 42px;
-			padding: 1px;
-			margin: 1px;
-		}
-	</style>
 </head>
 <body>
-	<div class="main">
-		<div class="logo"><img src="demoShop/icon (3).png" alt=""></div>
-		<div class="mainmenu">
-			<div class="col-md-4"><a href="">Home</a></div>
-			<div class="col-md-4"><a href="">Products</a>
-				<ul class="mainsubmenu">
-					<li><a href="">Lorem ipsum dolor</a></li>
-					<li ><a href="">Sit amet</a></li>
-					<li ><a href="">Consectetur adipisicing</a></li>
-					<li ><a href="">Tempor incididunt</a></li>
-					<li ><a href="">Dolore magna aliqua</a></li>
-					<li ><a href="">Ut enim ad minim veriam</a></li>
-					<li ><a href="">Quis nostrud</a></li>
-				</ul>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="logo"><img src="demoShop/icon 3.png" alt=""></div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<ul class="top-menu">
+							<li><a href="">Home</a></li>
+							<li><a href="">Products</a>
+								<ul class="top-submenu">
+									<li><a href="">Lorem ipsum dolor</a></li>
+									<li><a href="">Sit amet</a></li>
+									<li><a href="">Consectetur adipisicing</a></li>
+									<li><a href="">Tempor incididunt</a></li>
+									<li><a href="">Dolore magna aliqua</a></li>
+									<li><a href="">Ut enim ad minim veriam</a></li>
+									<li><a href="">Quis nostrud</a></li>
+								</ul>
+							</li>	
+							<li><a href="">Payment</a></li>
+							<li><a href="">Shipping</a></li>
+						</ul>
+					</div>	
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-9">
+							<div class="search"><input class="form-control" type="search" aria-label="Text input with multiple buttons" placeholder="Search">
+								<div class="input-group-btn"> 
+					        		<button type="button" class="btn btn-default" aria-label="Help">
+					        			<span class="glyphicon glyphicon-search"></span>
+					        		</button> 
+					        	</div>
+					        </div>
+						</div>
+						<div class="col-md-3">
+							<div class="korzina"><a href=""></a>
+								<div class="amount">1</div>
+							</div>
+						</div>
+					</div>
+				</div>	
 			</div>
-			<div class="col-md-4"><a href="">Payment</a></div>
-			<div class="col-md-4"><a href="">Shipping</a></div>
 		</div>
-		<div class="search"><input type="text" name="search" placeholder="search" id="1"></div>
-		<div class="korzina"><a href=""><img src="demoShop/icon (1).png" alt=""></a></div>
 	</div>
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<div class="left-main">
+							<p>DEVICE TYPE
+								<br><input type="radio" name="type" value="Laptop">Laptop
+								<br><input type="radio" name="type" value="Tablet">Tablet
+							</p>
+							<p>COLOR
+								<br><input type="radio" name="color" value="Black">Black
+								<br><input type="radio" name="color" value="Red">Red
+								<br><input type="radio" name="color" value="Green">Green
+								<br><input type="radio" name="color" value="Blue">Blue
+								<br><input type="radio" name="color" value="Orange">Orange
+							</p>
+							<p>RAM
+								<br><input type="radio" name="ram" value="1 GB">1 GB
+								<br><input type="radio" name="ram" value="2 GB">2 GB
+								<br><input type="radio" name="ram" value="4 GB">4 GB
+								<br><input type="radio" name="ram" value="8 GB">8 GB
+								<br><input type="radio" name="ram" value="16 GB">16 GB
+							</p>
+							<p>Show more options...</p>
+							<p><input class="button" type="button" value="SUBMIT"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="row">
+						<div class="right-main">
+							<div class="head-right-main">
+								<div class="rozdel">Laptops and Tablets</div>
+									<div class="sort"><select  name="sort" id="">
+										<option value="sort by price">sort by price</option>
+										<option value="sort by data">sort by data</option>
+										<option value="sort by data">sort by popularity</option>
+										</select>
+									</div>
+							</div>
+							<div class="body-right-main">
+								<div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 17.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$599,25
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 11.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$1250,99
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 10.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$399,50
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 16.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$599,25
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 14.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$1250,99
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 12.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$399,50
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 15.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$599,25
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 11.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$1250,99
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="icon-body-right-main"><img src="demoShop/icon 10.png" alt=""></div>
+									<div class="content-body-right-main">
+										<p>
+											<br>#1 Device Name
+											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											<br>TYPE: Laptop
+											<br>SCREEN SIZE: 7 inches
+											<br>RAM: 1 GB
+											<br>$399,50
+											<br><input class="button" type="button" value="MORE DETAILS">
+											<br><input class="button" type="button" value="ADD TO CART">
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+	<div class="floader"></div>
 </body>
 </html>
