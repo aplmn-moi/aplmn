@@ -56,6 +56,7 @@ body {
 .top-submenu {
   position: relative;
   display: none;
+  z-index: 10;
 }
 .top-submenu > li {
   position: relative;
@@ -82,6 +83,7 @@ body {
   color: #2C71B8;
 }
 .search {
+  position: absolute;
   border: 2px solid #2C71B8;
   padding: 4px;
   font-family: serif;
@@ -97,30 +99,28 @@ div.search > input::-webkit-input-placeholder {
   color: #2C71B8;
   font-size: 21px; 
 }
-button.btn.btn-default {
+.btn-search {
+  position: relative;
+  height: 30px;
+  width: 30px;
   background-color: #2C71B8;
-  border: 0;
   border-radius: 0;
-}
-span.glyphicon-search {
-  color: #FFFFFF;
+  padding: 0;
 }
 .korziza {
-  position: relative;
-  width: 50px;
+  position: absolute;
   height: 50px;
-  background-image: url(demoShop/icon 1.png);
-  background-color: #FFFFFF;
+  background-color: rgba(202, 219, 237,0.7);
   text-align: center;
   line-height: 50px;
   box-sizing: border-box;
-  padding: 0;
+  padding: 10px;
 }
 .amount {
-  position: absolute;
+  position: relative;
   color: #FFFFFF;
   background-color: #2C71B8;
-  border-radius: 50%; 
+  border-radius: 50%;
   width: 15px;
   height: 15px;
   line-height: 15px;
@@ -132,7 +132,6 @@ span.glyphicon-search {
   box-sizing: border-box;
   margin: 0;
 }
-
 .left-main {
   position: relative;
   background: rgba(202, 219, 237,0.3);
@@ -187,6 +186,6 @@ span.glyphicon-search {
   background: #2C71B8;
 }
 .icon-body-right-main {
-  width: 270px;
-  height: 80px;
+  height: 180px;
+  background-color: rgba(202, 219, 237,0.7);
 }
