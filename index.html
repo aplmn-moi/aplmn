@@ -35,14 +35,18 @@
 				<div class="col-md-3">
 					<div class="row">
 						<div class="col-md-9">
-							<div class="search"><input class="form-control" type="search" aria-label="Text input with multiple buttons" placeholder="Search">
-								<div class="btn-search"> 
-					        		<a href=""><img src="demoShop/search.png" alt=""></a> 
-					        	</div>
-					        </div>
+							<div class="search">
+								<div class="search-form">
+									<input class="form-control" type="search" aria-label="Text input with multiple buttons" placeholder="Search">
+								</div>
+							    <div class="btn-search">
+							    	<a href=""><img src="demoShop/search.png" alt=""></a>
+							    </div>
+							</div>
 						</div>
 						<div class="col-md-3">
-							<div class="korzina"><a href=""><img src="demoShop/icon 1.png" alt=""></a>
+							<div class="korzina">
+								<div class="icon-korzina"><a href=""><img src="demoShop/icon 1.png" alt=""></a></div>
 								<div class="amount">1</div>
 							</div>
 						</div>
@@ -58,8 +62,10 @@
 					<div class="row">
 						<div class="left-main">
 							<p>DEVICE TYPE
-								<br><input type="checkbox" name="type" value="Laptop">Laptop
-								<br><input type="checkbox" name="type" value="Tablet">Tablet
+								<br><input type="checkbox" id="input" class="custom-input">
+    								<label for="input">Laptop</label>
+								<br><input type="checkbox" id="input" class="custom-input">
+    								<label for="input">Tablet</label>
 							</p>
 							<p>COLOR
 								<br><input type="checkbox" name="color" value="Black">Black
@@ -75,7 +81,9 @@
 								<br><input type="checkbox" name="ram" value="8 GB">8 GB
 								<br><input type="checkbox" name="ram" value="16 GB">16 GB
 							</p>
-							<p>Show more options...</p>
+							<p class="prokrutka">
+								<a href="">Show more options...</a>
+							</p>
 							<p><input class="button" type="button" value="SUBMIT"></p>
 						</div>
 					</div>
@@ -85,7 +93,7 @@
 						<div class="right-main">
 							<div class="head-right-main">
 								<div class="rozdel">Laptops and Tablets</div>
-									<div class="sort"><select  name="sort" id="">
+									<div class="sort"><select class="sort-style" name="sort" id="">
 										<option value="sort by price">sort by price</option>
 										<option value="sort by data">sort by data</option>
 										<option value="sort by data">sort by popularity</option>
@@ -93,9 +101,24 @@
 									</div>
 							</div>
 							<div class="body-right-main">
-								<div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 17.png" alt=""></div>
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 17.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div>
 									<div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
@@ -103,14 +126,33 @@
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$599,25
+											<div class="coast">
+												<div class="money">$599</div>
+												<div class="meloch">25</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 11.png" alt=""></div>
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 11.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div>
 									<div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
@@ -118,44 +160,99 @@
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$1250,99
+											<div class="coast">
+												<div class="money">$1250</div>
+												<div class="meloch">99</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 10.png" alt=""></div>
-									<div class="content-body-right-main">
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 10.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div><div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
 											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$399,50
+											<div class="coast">
+												<div class="money">$399</div>
+												<div class="meloch">50</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 16.png" alt=""></div>
-									<div class="content-body-right-main">
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 16.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div><div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
 											<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$599,25
+											<div class="coast">
+												<div class="money">$599</div>
+												<div class="meloch">25</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 14.png" alt=""></div>
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 14.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div>
 									<div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
@@ -163,14 +260,33 @@
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$1250,99
+											<div class="coast">
+												<div class="money">$1250</div>
+												<div class="meloch">99</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 12.png" alt=""></div>
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 12.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div>
 									<div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
@@ -178,14 +294,33 @@
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$399,50
+											<div class="coast">
+												<div class="money">$399</div>
+												<div class="meloch">50</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 15.png" alt=""></div>
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 15.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div>
 									<div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
@@ -193,14 +328,33 @@
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$599,25
+											<div class="coast">
+												<div class="money">$599</div>
+												<div class="meloch">25</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 11.png" alt=""></div>
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 11.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div>
 									<div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
@@ -208,14 +362,33 @@
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$1250,99
+											<div class="coast">
+												<div class="money">$1250</div>
+												<div class="meloch">99</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 								<div class="box-item">
-									<div class="icon-body-right-main"><img src="demoShop/icon 10.png" alt=""></div>
+									<div class="top-body-right-main">
+										<img class="icon-body-right-main" src="demoShop/icon 10.png" alt="">
+											<div class="box-zoomAndCart-body-right-main">
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 8.png" alt="">
+												 		</a>
+												 	</div>
+												</div>
+												<div class="icons-zoomAndCart-body-right-main">
+													<div><a href="">
+															<img src="demoShop/icon 5.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+									</div>
 									<div class="content-body-right-main">
 										<p>
 											<br>#1 Device Name
@@ -223,13 +396,19 @@
 											<br>TYPE: Laptop
 											<br>SCREEN SIZE: 7 inches
 											<br>RAM: 1 GB
-											<br>$399,50
+											<div class="coast">
+												<div class="money">$399</div>
+												<div class="meloch">50</div>
+											</div>
 											<br><input class="button" type="button" value="MORE DETAILS">
 											<br><input class="button" type="button" value="ADD TO CART">
 										</p>
 									</div>
 								</div>
 							</div>
+						<p class="prokrutka">
+							<a href="">Load more...</a>
+						</p>
 						</div>
 					</div>
 				</div>
@@ -237,6 +416,6 @@
 		</div>	
 	</div>
 </div>
-	<div class="floader"></div>
+	<div class="floader">&copy; Copyright 2017</div>
 </body>
 </html>
